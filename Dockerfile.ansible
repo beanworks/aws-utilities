@@ -1,6 +1,8 @@
 FROM ubuntu:14.04
 
 RUN \
+  apt-get update && \
+  apt-get install software-properties-common && \
   apt-add-repository ppa:jonathonf/python-2.7 && \
   apt-get update && \
   apt-get install python2.7 && \
